@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CameraKart - Premium Cameras at Affordable Prices</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-camera">
+          <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"></path>
+          <circle cx="12" cy="13" r="3"></circle>
+        </svg>
+        <span>CameraKart</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-menu-toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu">
+          <line x1="4" y1="12" x2="20" y2="12"></line>
+          <line x1="4" y1="6" x2="20" y2="6"></line>
+          <line x1="4" y1="18" x2="20" y2="18"></line>
+        </svg>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Premium Cameras at Affordable Prices</h1>
+          <p>Discover quality photography equipment at the best prices in India</p>
+          <div class="hero-buttons">
+            <a href="#products" class="btn btn-primary">Browse Products</a>
+            <a href="#contact" class="btn btn-secondary">Contact Us</a>
+          </div>
+          <div class="hero-features">
+            <div class="feature">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award">
+                <circle cx="12" cy="8" r="6"></circle>
+                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+              </svg>
+              <span>Genuine Products</span>
+            </div>
+            <div class="feature">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-truck">
+                <path d="M10 17h4V5H2v12h3"></path>
+                <path d="M20 17h2v-3.34a4 4 0 0 0-1.17-2.83L19 9h-5v8h1"></path>
+                <rect x="2" y="9" width="15" height="8"></rect>
+                <circle cx="7.5" cy="17.5" r="2.5"></circle>
+                <circle cx="17.5" cy="17.5" r="2.5"></circle>
+              </svg>
+              <span>Pan-India Delivery</span>
+            </div>
+            <div class="feature">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"></path>
+                <path d="m9 12 2 2 4-4"></path>
+              </svg>
+              <span>Official Warranty</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.pexels.com/photos/1787235/pexels-photo-1787235.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Camera showcase">
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products" id="products">
+      <div class="container">
+        <div class="section-header">
+          <h2>Featured Products</h2>
+          <div class="underline"></div>
+          <p>Our best-selling cameras and accessories at competitive prices in <span class="highlight">India</span></p>
+        </div>
+
+        <div class="price-filter">
+          <div class="filter-label">Price Range (₹):</div>
+          <div class="filter-options">
+            <button class="filter-btn active" data-min="0" data-max="1000000">All</button>
+            <button class="filter-btn" data-min="0" data-max="50000">Under ₹50,000</button>
+            <button class="filter-btn" data-min="50000" data-max="100000">₹50,000 - ₹1,00,000</button>
+            <button class="filter-btn" data-min="100000" data-max="1000000">Above ₹1,00,000</button>
+          </div>
+        </div>
+
+        <div class="products-grid">
+          <!-- Product cards will be dynamically inserted here by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="product-categories" id="products">
+      <div class="container">
+        <div class="section-header">
+          <h2>Product Categories</h2>
+          <div class="underline"></div>
+          <p>Browse our extensive collection of photography equipment organized by categories</p>
+        </div>
+        
+        <div class="categories-grid">
+          <div class="category-card" data-category="dslr">
+            <div class="category-image">
+              <img src="https://images.pexels.com/photos/243757/pexels-photo-243757.jpeg?auto=compress&cs=tinysrgb&w=800" alt="DSLR Cameras">
+              <div class="category-overlay">
+                <span class="view-btn">View Products</span>
+              </div>
+            </div>
+            <div class="category-content">
+              <div class="category-icon-container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-camera">
+                  <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"></path>
+                  <circle cx="12" cy="13" r="3"></circle>
+                </svg>
+              </div>
+              <span class="item-count">25+ items</span>
+              <h3>DSLR Cameras</h3>
+              <p>Professional & Entry Level</p>
+            </div>
+          </div>
+
+          <div class="category-card" data-category="mirrorless">
+            <div class="category-image">
+              <img src="https://images.pexels.com/photos/51383/photo-camera-subject-photographer-51383.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Mirrorless Cameras">
+              <div class="category-overlay">
+                <span class="view-btn">View Products</span>
+              </div>
+            </div>
+            <div class="category-content">
+              <div class="category-icon-container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-camera">
+                  <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"></path>
+                  <circle cx="12" cy="13" r="3"></circle>
+                </svg>
+              </div>
+              <span class="item-count">18+ items</span>
+              <h3>Mirrorless Cameras</h3>
+              <p>Compact & Powerful</p>
+            </div>
+          </div>
+
+          <div class="category-card" data-category="lenses">
+            <div class="category-image">
+              <img src="https://images.pexels.com/photos/3602258/pexels-photo-3602258.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Camera Lenses">
+              <div class="category-overlay">
+                <span class="view-btn">View Products</span>
+              </div>
+            </div>
+            <div class="category-content">
+              <div class="category-icon-container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-aperture">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="14.31" y1="8" x2="20.05" y2="17.94"></line>
+                  <line x1="9.69" y1="8" x2="21.17" y2="8"></line>
+                  <line x1="7.38" y1="12" x2="13.12" y2="2.06"></line>
+                  <line x1="9.69" y1="16" x2="3.95" y2="6.06"></line>
+                  <line x1="14.31" y1="16" x2="2.83" y2="16"></line>
+                  <line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
+                </svg>
+              </div>
+              <span class="item-count">40+ items</span>
+              <h3>Camera Lenses</h3>
+              <p>Prime & Zoom Options</p>
+            </div>
+          </div>
+
+          <div class="category-card" data-category="accessories">
+            <div class="category-image">
+              <img src="https://images.pexels.com/photos/385998/pexels-photo-385998.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Accessories">
+              <div class="category-overlay">
+                <span class="view-btn">View Products</span>
+              </div>
+            </div>
+            <div class="category-content">
+              <div class="category-icon-container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-package">
+                  <path d="M16.5 9.4 7.55 4.24"></path>
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                  <polyline points="3.29 7 12 12 20.71 7"></polyline>
+                  <line x1="12" y1="22" x2="12" y2="12"></line>
+                </svg>
+              </div>
+              <span class="item-count">30+ items</span>
+              <h3>Accessories</h3>
+              <p>Tripods, Bags & More</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="section-header">
+          <h2>About CameraKart</h2>
+          <div class="underline"></div>
+          <p>Your trusted partner for all photography equipment needs in India since 2010</p>
+        </div>
+        
+        <div class="about-content">
+          <div class="about-image">
+            <div class="decoration-circle circle-1"></div>
+            <div class="decoration-circle circle-2"></div>
+            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1000&q=80" alt="Camera shop team">
+            <div class="established-badge">Est. 2008</div>
+          </div>
+          
+          <div class="about-text">
+            <h3>India's Trusted Camera Retailer</h3>
+            <p>Founded with a passion for photography, CameraKart has grown to become one of India's most trusted camera equipment retailers, serving photography enthusiasts, professionals, and students alike.</p>
+            <p>We specialize in providing authentic photography gear at affordable prices, with expert guidance to help you make the right choice for your needs and budget.</p>
+            
+            <div class="about-features">
+              <div class="about-feature">
+                <div class="about-feature-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award">
+                    <circle cx="12" cy="8" r="6"></circle>
+                    <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="feature-title">Genuine Products</p>
+                  <p class="feature-subtitle">100% authentic</p>
+                </div>
+              </div>
+              
+              <div class="about-feature">
+                <div class="about-feature-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-bag">
+                    <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                    <path d="M3 6h18"></path>
+                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="feature-title">Latest Gear</p>
+                  <p class="feature-subtitle">Updated inventory</p>
+                </div>
+              </div>
+              
+              <div class="about-feature">
+                <div class="about-feature-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="feature-title">Expert Team</p>
+                  <p class="feature-subtitle">Professional advice</p>
+                </div>
+              </div>
+              
+              <div class="about-feature">
+                <div class="about-feature-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <p class="feature-title">Pan-India Delivery</p>
+                  <p class="feature-subtitle">Nationwide shipping</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="stats-container">
+          <div class="stat">
+            <div class="stat-number">15+</div>
+            <div class="stat-label">Years of Experience</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">10,000+</div>
+            <div class="stat-label">Happy Customers</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Products Available</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Cities Served</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2>Contact Us</h2>
+          <div class="underline"></div>
+          <p>Have questions? We're here to help you choose the perfect camera equipment</p>
+        </div>
+        
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="contact-card">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <h3>Our Location</h3>
+              <p>123 Camera Street, Tech Hub, Nagpur - 440028, Maharastra, India</p>
+            </div>
+            
+            <div class="contact-card">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <h3>Call Us</h3>
+              <p>+91 10234 56789</p>
+              <p>Monday to Saturday, 10am to 7pm</p>
+            </div>
+            
+            <div class="contact-card">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail">
+                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+              <h3>Email Us</h3>
+              <p>info@camerakart.com</p>
+              <p>support@camerakart.com</p>
+            </div>
+          </div>
+          
+          <div class="contact-form-container">
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email address">
+              </div>
+              
+              <div class="form-group">
+                <label for="phone">Phone Number (Optional)</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" required placeholder="How can we help you?"></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <div class="footer-logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-camera">
+              <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"></path>
+              <circle cx="12" cy="13" r="3"></circle>
+            </svg>
+            <span>CameraKart</span>
+          </div>
+          <p>Your trusted partner for all photography equipment needs in India since 2010.</p>
+          <p class="copyright">© 2025 CameraKart. All rights reserved.</p>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><span class="footer-link" onclick="window.location.href='/'">Home</span></li>
+            <li><span class="footer-link" onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'})">Products</span></li>
+            <li><span class="footer-link" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">About Us</span></li>
+            <li><span class="footer-link" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Contact</span></li>
+            <li><span class="footer-link">Privacy Policy</span></li>
+            <li><span class="footer-link">Terms & Conditions</span></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Product Categories</h4>
+          <ul>
+            <li><span class="footer-link" onclick="window.location.href='/products?category=dslr'">DSLR Cameras</span></li>
+            <li><span class="footer-link" onclick="window.location.href='/products?category=mirrorless'">Mirrorless Cameras</span></li>
+            <li><span class="footer-link" onclick="window.location.href='/products?category=lenses'">Camera Lenses</span></li>
+            <li><span class="footer-link" onclick="window.location.href='/products?category=tripods'">Tripods & Supports</span></li>
+            <li><span class="footer-link" onclick="window.location.href='/products?category=bags'">Camera Bags</span></li>
+            <li><span class="footer-link" onclick="window.location.href='/products?category=lighting'">Lighting Equipment</span></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Newsletter</h4>
+          <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+          
+          <form id="newsletterForm" class="newsletter-form">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit" class="btn btn-accent">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>
+          All product names, logos, and brands are property of their respective owners. 
+          All company, product and service names used are for identification purposes only.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
